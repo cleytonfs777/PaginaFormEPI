@@ -1,0 +1,32 @@
+# Site estático — CBMMG Formulário EPIs (Netlify)
+#
+# No painel do Netlify:
+#   Base directory: netlify
+#   Publish directory: public   (já definido abaixo)
+#   Build command: (vazio / echo)
+
+[build]
+  publish = "public"
+  command = "echo 'Static site — sem build'"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[redirects]]
+  from = "/privacidade/"
+  to = "/privacidade"
+  status = 301
+
+[[redirects]]
+  from = "/privacy"
+  to = "/privacidade"
+  status = 301

@@ -1,0 +1,4 @@
+# URLs amigáveis
+/privacy          /privacidade/index.html  301
+/privacidade      /privacidade/index.html  200
+/privacidade/     /privacidade/index.html  200

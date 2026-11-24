@@ -1,0 +1,33 @@
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies (caso use Node no futuro)
+node_modules/
+
+# Build / cache
+.cache/
+dist/
+.parcel-cache/
+
+# Local Netlify CLI
+.netlify/
